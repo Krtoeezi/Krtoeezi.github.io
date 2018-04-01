@@ -145,15 +145,15 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2018/04/01/ConfigureJava/" >
-  
+        <a href="/2018/04/01/How_to_ configure java/" >
+  How to configure java
 </a>
 
       </h3>
       
 
       <div class="article-info">
-        <a href="/2018/04/01/ConfigureJava/"><span class="article-date">
+        <a href="/2018/04/01/How_to_ configure java/"><span class="article-date">
   2018-04-01
 </span>
 </a>
@@ -164,7 +164,16 @@
       </div>
       <div class="article-entry">
         
-          
+          <h1 id="对于Win10-的Java配置问题"><a href="#对于Win10-的Java配置问题" class="headerlink" title="对于Win10 的Java配置问题"></a>对于Win10 的Java配置问题</h1><p>##在此我只给出解决的网址链接和步骤，大家可以参考两个网址中的方法，应该是可以解决问题。如若没有解决，请加我QQ私聊：<br><img src="http://wx4.sinaimg.cn/large/006vLrBqgy1fpxeiwxxrvj30f00kkq4b.jpg" alt="QQ"><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">下载JDK</span><br></pre></td></tr></table></figure></p>
+<p><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">download</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">安装JDK(记住路径)</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">打开系统环境变量的配置</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">修改path中的变量，注意是添加，不要在原有变量上改会覆盖，win10中特别注意要用绝对路径不要用相对路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">添加一个JAVA_HOME =后面是你刚刚的JDK的路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">添加一个CLASSPATH =.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar </span><br><span class="line">也就是添加一些JDK中的工具</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最后去cmd中检测javac</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">详情请参考</span><br></pre></td></tr></table></figure>
+<p>1、<a href="https://jingyan.baidu.com/article/e3c78d644e6fef3c4c85f53a.html?qq-pf-to=pcqq.group" target="_blank" rel="noopener">baidu</a><br>2、<a href="http://blog.csdn.net/suncold123/article/details/48392135" target="_blank" rel="noopener">csdn</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">谢谢阅读</span><br></pre></td></tr></table></figure></p>
+
         
       </div>
     </div>
