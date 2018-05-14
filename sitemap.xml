@@ -2,7 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/amusement/index.html</loc>
+    
+    <lastmod>2018-05-14T09:56:57.354Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/learn/index.html</loc>
+    
+    <lastmod>2018-05-14T09:56:42.778Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2018-05-14T09:49:04.576Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/%E5%85%B3%E4%BA%8E%E6%88%91%E8%87%AA%E5%B7%B1.html</loc>
     
     <lastmod>2018-05-14T08:43:46.088Z</lastmod>
     
