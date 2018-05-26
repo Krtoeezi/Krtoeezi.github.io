@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-14T11:10:24.892Z</updated>
+  <updated>2018-05-26T05:40:54.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何下载一个网页中你想要的视频</title>
+    <link href="http://yoursite.com/2018/05/26/%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BD%BD%E4%B8%80%E4%B8%AA%E7%BD%91%E9%A1%B5%E4%B8%AD%E4%BD%A0%E6%83%B3%E8%A6%81%E7%9A%84%E8%A7%86%E9%A2%91/"/>
+    <id>http://yoursite.com/2018/05/26/如何下载一个网页中你想要的视频/</id>
+    <published>2018-05-26T05:05:48.000Z</published>
+    <updated>2018-05-26T05:40:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">需要的工具：</span><br><span class="line">1、Edge浏览器</span><br><span class="line">2、维棠视频下载软件</span><br></pre></td></tr></table></figure><h3 id="某一天室友做PPT突然想用一个网页上的视频，但是又没有下载按钮。"><a href="#某一天室友做PPT突然想用一个网页上的视频，但是又没有下载按钮。" class="headerlink" title="某一天室友做PPT突然想用一个网页上的视频，但是又没有下载按钮。"></a>某一天室友做PPT突然想用一个网页上的视频，但是又没有下载按钮。</h3><ul><li><img src="https://wx4.sinaimg.cn/mw690/006vLrBqly1fronqkbilbj31kw10cqh5.jpg" alt="img"></li></ul><h3 id="我尝试着去找这个视频的外链，然后用迅雷下载，结果失败了，毕竟外链不是视频的真正地址。于是我去网上寻找方法，最后找到了一款软件：维棠视频下载软件。"><a href="#我尝试着去找这个视频的外链，然后用迅雷下载，结果失败了，毕竟外链不是视频的真正地址。于是我去网上寻找方法，最后找到了一款软件：维棠视频下载软件。" class="headerlink" title="我尝试着去找这个视频的外链，然后用迅雷下载，结果失败了，毕竟外链不是视频的真正地址。于是我去网上寻找方法，最后找到了一款软件：维棠视频下载软件。"></a>我尝试着去找这个视频的外链，然后用迅雷下载，结果失败了，毕竟外链不是视频的真正地址。于是我去网上寻找方法，最后找到了一款软件：维棠视频下载软件。</h3><ul><li><img src="https://wx1.sinaimg.cn/mw690/006vLrBqly1fronqmtrjaj31kw10cnhb.jpg" alt="img"></li></ul><h3 id="方法如下："><a href="#方法如下：" class="headerlink" title="方法如下："></a>方法如下：</h3><ol><li>先找到自己想要的视频，并右键点击检查元素。<img src="https://wx4.sinaimg.cn/mw690/006vLrBqly1fronql4iv4j31kw10cdty.jpg" alt="img"></li><li>找到src，复制视频的外链源码，打开确定为自己想要的视频。<img src="https://wx2.sinaimg.cn/mw690/006vLrBqly1fronqn7346j31kw10c7r8.jpg" alt="img"></li><li>复制外链到维棠视频下载软件，新建任务下载。<img src="https://wx1.sinaimg.cn/mw690/006vLrBqly1fronqfynlsj31kw0ztgsb.jpg" alt="img"></li><li>等待下载完成。<img src="https://wx2.sinaimg.cn/mw690/006vLrBqly1fronqi1yuij31kw0ztn6o.jpg" alt="img"></li><li>这个时候你发现想要的视频就下载到了本地。<img src="https://wx3.sinaimg.cn/mw690/006vLrBqly1fronqoqn7pj31kw10ce81.jpg" alt="img"></li></ol><h3 id="大概就是这个样子，怎么样方不方便，喜欢就多来看看吧。"><a href="#大概就是这个样子，怎么样方不方便，喜欢就多来看看吧。" class="headerlink" title="大概就是这个样子，怎么样方不方便，喜欢就多来看看吧。"></a>大概就是这个样子，怎么样方不方便，喜欢就多来看看吧。</h3><p>下载地址：</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+      <category term="learn" scheme="http://yoursite.com/categories/learn/"/>
+    
+    
+      <category term="tips" scheme="http://yoursite.com/tags/tips/"/>
+    
+  </entry>
   
   <entry>
     <title>如何利用Edge浏览器获取你想要的图片外链</title>
@@ -46,9 +71,9 @@
     <link href="http://yoursite.com/2018/04/15/%E5%A6%82%E4%BD%95%E7%A0%B4%E8%A7%A3adobe%E7%B3%BB%E5%88%97%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
     <id>http://yoursite.com/2018/04/15/如何破解adobe系列的软件/</id>
     <published>2018-04-15T13:50:52.000Z</published>
-    <updated>2018-05-14T11:12:03.657Z</updated>
+    <updated>2018-05-26T05:23:18.284Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="很多人在想要学习ps-pr-ae等adobe系列的软件时都会碰到一个头疼的问题："><a href="#很多人在想要学习ps-pr-ae等adobe系列的软件时都会碰到一个头疼的问题：" class="headerlink" title="很多人在想要学习ps,pr,ae等adobe系列的软件时都会碰到一个头疼的问题："></a>很多人在想要学习ps,pr,ae等adobe系列的软件时都会碰到一个头疼的问题：</h3><h1 id="这个软件是收费的！！！"><a href="#这个软件是收费的！！！" class="headerlink" title="这个软件是收费的！！！"></a>这个软件是收费的！！！</h1><h2 id="如果不去购买，它可能只有7天或者30天的试用期。"><a href="#如果不去购买，它可能只有7天或者30天的试用期。" class="headerlink" title="如果不去购买，它可能只有7天或者30天的试用期。"></a>如果不去购买，它可能只有7天或者30天的试用期。</h2><h5 id="所以这次我来告诉大家这个系列的软件如果破解，不再受其试用期的限制。"><a href="#所以这次我来告诉大家这个系列的软件如果破解，不再受其试用期的限制。" class="headerlink" title="所以这次我来告诉大家这个系列的软件如果破解，不再受其试用期的限制。"></a>所以这次我来告诉大家这个系列的软件如果破解，不再受其试用期的限制。</h5><p>1.首先，我们需要adobe系列的软件和其破解软件。</p><blockquote><p>adobe系列最新的是2018CC版本，我已经将它和破解软件上传到了我的百度云网盘，大家可以自行获取。</p></blockquote><p>2.下载完成后，自行选择adobe里你要安装的软件。</p><blockquote><p><img src="https://imgsa.baidu.com/exp/w=480/sign=05d118d6ad1ea8d38a22750ca70a30cf/50da81cb39dbb6fd644d4a4b0224ab18972b374c.jpg" alt="安装界面"></p></blockquote><p>3.然后它会弹出试用界面，关闭软件</p><blockquote><p><img src="https://imgsa.baidu.com/exp/w=480/sign=4b15834a8182b9013dadc23b438ca97e/a8ec8a13632762d073ea0cd2abec08fa503dc683.jpg" alt="试用界面"></p></blockquote><p>4.打开破解软件（记得用管理员运行），在adobe软件的安装目录里找到amtilb.dll文件选中，然后install破解</p><blockquote><p><img src="https://imgsa.baidu.com/exp/w=480/sign=8a13631be0f81a4c2632edc1e72a6029/30adcbef76094b362a8fca82a8cc7cd98d109d44.jpg" alt="破解"></p><p><img src="https://imgsa.baidu.com/exp/w=480/sign=7d82e8ab3aadcbef01347f0e9caf2e0e/9825bc315c6034a8f3ff69eec013495409237644.jpg" alt="找文件"></p></blockquote><p>5.再打开adobe，你会发现它不再弹出试用界面，那么就破解成功了，如果没有成功就再来一次。</p><blockquote><p><img src="https://imgsa.baidu.com/exp/w=480/sign=faf57d995ada81cb4ee682c56267d0a4/8326cffc1e178a82ee9aeacdfd03738da977e83d.jpg" alt="破解成功"></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h3 id="很多人在想要学习ps-pr-ae等adobe系列的软件时都会碰到一个头疼的问题："><a href="#很多人在想要学习ps-pr-ae等adobe系列的软件时都会碰到一个头疼的问题：" class="headerlink" title="很多人在想要学习ps,pr,ae等adobe系列的软件时都会碰到一个头疼的问题："></a>很多人在想要学习ps,pr,ae等adobe系列的软件时都会碰到一个头疼的问题：</h3><h1 id="这个软件是收费的！！！"><a href="#这个软件是收费的！！！" class="headerlink" title="这个软件是收费的！！！"></a>这个软件是收费的！！！</h1><h2 id="如果不去购买，它可能只有7天或者30天的试用期。"><a href="#如果不去购买，它可能只有7天或者30天的试用期。" class="headerlink" title="如果不去购买，它可能只有7天或者30天的试用期。"></a>如果不去购买，它可能只有7天或者30天的试用期。</h2><h5 id="所以这次我来告诉大家这个系列的软件如果破解，不再受其试用期的限制。"><a href="#所以这次我来告诉大家这个系列的软件如果破解，不再受其试用期的限制。" class="headerlink" title="所以这次我来告诉大家这个系列的软件如果破解，不再受其试用期的限制。"></a>所以这次我来告诉大家这个系列的软件如果破解，不再受其试用期的限制。</h5><p>1.首先，我们需要adobe系列的软件和其破解软件。</p><blockquote><p>adobe系列最新的是2018CC版本，我已经将它和破解软件上传到了我的百度云网盘，大家可以自行获取。</p></blockquote><p>2.下载完成后，自行选择adobe里你要安装的软件。</p><blockquote><p><img src="http://wx2.sinaimg.cn/mw690/006vLrBqly1froo54wa3pj30rz155n37.jpg" alt="安装界面"></p></blockquote><p>3.然后它会弹出试用界面，关闭软件</p><blockquote><p><img src="http://wx3.sinaimg.cn/mw690/006vLrBqly1froo53ciewj30ru0gcdhb.jpg" alt="试用界面"></p></blockquote><p>4.打开破解软件（记得用管理员运行），在adobe软件的安装目录里找到amtilb.dll文件选中，然后install破解</p><blockquote><p>![破解](</p><ul><li><img src="https://wx1.sinaimg.cn/mw690/006vLrBqly1froo54o1crj30k90hxaet.jpg" alt="img">)</li></ul><p>![找文件](</p><ul><li><img src="https://wx3.sinaimg.cn/mw690/006vLrBqly1froo557phgj30rr0i5aje.jpg" alt="img">)</li></ul></blockquote><p>5.再打开adobe，你会发现它不再弹出试用界面，那么就破解成功了，如果没有成功就再来一次。</p><blockquote><p>![破解成功](</p><ul><li><img src="https://wx2.sinaimg.cn/mw690/006vLrBqly1froo531fi0j30rv0cw74q.jpg" alt="img">)</li></ul></blockquote>]]></content>
     
     <summary type="html">
     
