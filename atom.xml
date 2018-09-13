@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Krtoeezi.cn/Blog/"/>
-  <updated>2018-05-26T06:03:54.110Z</updated>
+  <updated>2018-09-13T11:19:34.114Z</updated>
   <id>http://Krtoeezi.cn/Blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webstorm的安装及破解</title>
+    <link href="http://Krtoeezi.cn/Blog/2018/09/13/webstorm%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3/"/>
+    <id>http://Krtoeezi.cn/Blog/2018/09/13/webstorm的安装及破解/</id>
+    <published>2018-09-13T10:49:19.000Z</published>
+    <updated>2018-09-13T11:19:34.114Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.第一步先下载WebStorm<br>下载地址<a href="http://www.jetbrains.com/webstorm/download/#section=windows" target="_blank" rel="noopener">WebStorm</a></p><p><img src="https://wx1.sinaimg.cn/mw690/006vLrBqly1fv84jjc066j31kw0xbguz.jpg" alt="webstorm网页"></p><p>2.第二步打开后破解</p><p>具体破解方法参考<a href="https://blog.csdn.net/voke_/article/details/76418116" target="_blank" rel="noopener">webstorm 2018 激活破解方法大全</a></p><p><img src="https://wx3.sinaimg.cn/mw690/006vLrBqly1fv84pcvpomj31kw0xbh86.jpg" alt="img"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.第一步先下载WebStorm&lt;br&gt;下载地址&lt;a href=&quot;http://www.jetbrains.com/webstorm/download/#section=windows&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;WebStorm&lt;/a&gt;
+      
+    
+    </summary>
+    
+      <category term="learn" scheme="http://Krtoeezi.cn/Blog/categories/learn/"/>
+    
+    
+      <category term="前端" scheme="http://Krtoeezi.cn/Blog/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>如何下载一个网页中你想要的视频</title>
