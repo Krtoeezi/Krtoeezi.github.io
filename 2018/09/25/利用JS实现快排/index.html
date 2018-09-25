@@ -7,22 +7,20 @@
   
   
   
-  <title>利用JS实现双队的进队出队 | 夜半鸢鸣</title>
+  <title>利用JS实现快排 | 夜半鸢鸣</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="几个常用的函数:   array.toString:把数组变成字符串，去除【】，内容用逗号链接 array.push():在数组的最末尾添加元素            array.pop():不需要参数，在数组的最末尾删除一项   思路：  利用队列A和队列B，先将元素push进A队列，然后利用pop踢出n-1个元素到B队列中，然后将A队列中最后一个元素Pop出，作为出队,再将B队列中的元素重新">
+  <meta name="description" content="运用到的函数：    Math.floor(x):返回小于等于x的最大整数 123456789101112131415&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;document.write(Math.floor(0.60) + &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;)document.write(Math.floor(0.40) +">
 <meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用JS实现双队的进队出队">
-<meta property="og:url" content="http://Krtoeezi.cn/Blog/2018/09/25/利用JS实现双队的进队出队/index.html">
+<meta property="og:title" content="利用JS实现快排">
+<meta property="og:url" content="http://Krtoeezi.cn/Blog/2018/09/25/利用JS实现快排/index.html">
 <meta property="og:site_name" content="夜半鸢鸣">
-<meta property="og:description" content="几个常用的函数:   array.toString:把数组变成字符串，去除【】，内容用逗号链接 array.push():在数组的最末尾添加元素            array.pop():不需要参数，在数组的最末尾删除一项   思路：  利用队列A和队列B，先将元素push进A队列，然后利用pop踢出n-1个元素到B队列中，然后将A队列中最后一个元素Pop出，作为出队,再将B队列中的元素重新">
+<meta property="og:description" content="运用到的函数：    Math.floor(x):返回小于等于x的最大整数 123456789101112131415&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;document.write(Math.floor(0.60) + &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;)document.write(Math.floor(0.40) +">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://wx2.sinaimg.cn/mw690/006vLrBqly1fvlpz9cvkuj30l00dm74q.jpg">
-<meta property="og:updated_time" content="2018-09-25T09:28:10.959Z">
+<meta property="og:updated_time" content="2018-09-25T14:47:24.963Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用JS实现双队的进队出队">
-<meta name="twitter:description" content="几个常用的函数:   array.toString:把数组变成字符串，去除【】，内容用逗号链接 array.push():在数组的最末尾添加元素            array.pop():不需要参数，在数组的最末尾删除一项   思路：  利用队列A和队列B，先将元素push进A队列，然后利用pop踢出n-1个元素到B队列中，然后将A队列中最后一个元素Pop出，作为出队,再将B队列中的元素重新">
-<meta name="twitter:image" content="https://wx2.sinaimg.cn/mw690/006vLrBqly1fvlpz9cvkuj30l00dm74q.jpg">
+<meta name="twitter:title" content="利用JS实现快排">
+<meta name="twitter:description" content="运用到的函数：    Math.floor(x):返回小于等于x的最大整数 123456789101112131415&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;document.write(Math.floor(0.60) + &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;)document.write(Math.floor(0.40) +">
   
     <link rel="alternative" href="/atom.xml" title="夜半鸢鸣" type="application/atom+xml">
   
@@ -280,11 +278,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-利用JS实现双队的进队出队" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-利用JS实现快排" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2018/09/25/利用JS实现双队的进队出队/" class="article-date">
-      <time datetime="2018-09-25T05:29:38.000Z" itemprop="datePublished">2018-09-25</time>
+      <a  href="/2018/09/25/利用JS实现快排/" class="article-date">
+      <time datetime="2018-09-25T12:04:43.000Z" itemprop="datePublished">2018-09-25</time>
 </a>
 
     </div>
@@ -298,7 +296,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      利用JS实现双队的进队出队
+      利用JS实现快排
     </h1>
   
 
@@ -325,25 +323,30 @@
       
           
         <blockquote>
-<p>几个常用的函数:</p>
+<p>运用到的函数： </p>
 </blockquote>
 <ol>
-<li>array.toString:把数组变成字符串，去除【】，内容用逗号链接</li>
-<li>array.push():在数组的最末尾添加元素           </li>
-<li>array.pop():不需要参数，在数组的最末尾删除一项</li>
+<li><p>Math.floor(x):返回小于等于x的最大整数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">document.write(Math.floor(0.60) + &quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(Math.floor(0.40) + &quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(Math.floor(5) + &quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(Math.floor(5.1) + &quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(Math.floor(-5.1) + &quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(Math.floor(-5.9))</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出结果：</span><br><span class="line">0</span><br><span class="line">0</span><br><span class="line">5</span><br><span class="line">5</span><br><span class="line">-6</span><br><span class="line">-6</span><br></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+<li><p>Array.splice():删除元素，并向数组添加新元素，返回值是删除内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">（1）删除指定范围的数组元素：</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    var arr = new Array(6);</span><br><span class="line">   arr[0] = &quot;George&quot;; </span><br><span class="line">   arr[1] = &quot;John&quot;;</span><br><span class="line">   arr[2] = &quot;Thomas&quot;;</span><br><span class="line">   arr[3] = &quot;James&quot;;</span><br><span class="line">   arr[4] = &quot;Adrew&quot;;</span><br><span class="line">   arr[5] = &quot;Martin&quot;;</span><br><span class="line"></span><br><span class="line">   document.write(arr + &quot;&lt;br/&gt;&quot;);</span><br><span class="line">   arr.splice(2, 3); // 删除第三个元素以后的三个数组元素(包含第三个元素)</span><br><span class="line">   document.write(arr);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出结果：</span><br><span class="line">George,John,Thomas,James,Adrew,Martin</span><br><span class="line">George,John,Martin</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">（2）从指定下标开始插入指定元素（元素个数不限）：</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">   var arr = new Array(6);</span><br><span class="line">   arr[0] = &quot;George&quot;;</span><br><span class="line">   arr[1] = &quot;John&quot;;</span><br><span class="line">   arr[2] = &quot;Thomas&quot;;</span><br><span class="line">   arr[3] = &quot;James&quot;;</span><br><span class="line">   arr[4] = &quot;Adrew&quot;;</span><br><span class="line">   arr[5] = &quot;Martin&quot;;</span><br><span class="line"></span><br><span class="line">   document.write(arr + &quot;&lt;br/&gt;&quot;);</span><br><span class="line">   arr.splice(2, 0, &quot;William&quot;,&quot;JACK&quot;); // 在第三个元素之前插入&quot;William&quot;,&quot;JACK&quot;</span><br><span class="line">   document.write(arr);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出结果：</span><br><span class="line">George,John,Thomas,James,Adrew,Martin</span><br><span class="line">George,John,William,JACK,Thomas,James,Adrew,Martin</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">（3）删除指定范围的数组元素，并用指定元素替换（元素个数不限）：</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">   var arr = new Array(6);</span><br><span class="line">   arr[0] = &quot;George&quot;;</span><br><span class="line">   arr[1] = &quot;John&quot;;</span><br><span class="line">   arr[2] = &quot;Thomas&quot;;</span><br><span class="line">   arr[3] = &quot;James&quot;;</span><br><span class="line">   arr[4] = &quot;Adrew&quot;;</span><br><span class="line">   arr[5] = &quot;Martin&quot;;</span><br><span class="line"></span><br><span class="line">   document.write(arr + &quot;&lt;br/&gt;&quot;);</span><br><span class="line">   arr.splice(2,3,&quot;William&quot;,&quot;JACK&quot;); // 删除第三个元素以后的三个数组元素(包含第三个元素)，并用&quot;William&quot;,&quot;JACK&quot;进行替换</span><br><span class="line">document.write(arr);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出结果：</span><br><span class="line">George,John,Thomas,James,Adrew,Martin</span><br><span class="line">George,John,William,JACK,Martin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Array.concat():连接两个或更多的数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        var arr = [1, 2, 3];</span><br><span class="line">        var arr1 = [11, 22, 33];</span><br><span class="line">      document.write(arr.concat(4, 5,arr1));</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出结果：</span><br><span class="line">1，2，3，4，5，11，22，33</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <blockquote>
-<p>思路：</p>
+<p>算法：</p>
 </blockquote>
-<p>利用队列A和队列B，先将元素push进A队列，然后利用pop踢出n-1个元素到B队列中，然后将A队列中最后一个元素Pop出，作为出队,再将B队列中的元素重新push到A队列，在Push和pop的过程中，用point来记录他们的值</p>
+<p>找出数组中中间的数，并用两边的数与其比较，小者放进left，大者放进right，然后不断递归，直到length为1时输出，将所有的元素数组累加得到排序后的数组</p>
 <blockquote>
 <p>代码：</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">var array_a = [];</span><br><span class="line">var array_b = [];</span><br><span class="line">var queue  = new Queue();</span><br><span class="line">function Queue() &#123;</span><br><span class="line">  this.in = function (x) &#123;</span><br><span class="line">    array_a.push(x);</span><br><span class="line">    console.log(&apos;array A: &apos;+array_a.toString());</span><br><span class="line">    console.log(&apos;The length of array A is:&apos;+array_a.length);</span><br><span class="line">  &#125;;</span><br><span class="line">  this.out = function () &#123;</span><br><span class="line">    var i;</span><br><span class="line">    var len_a;</span><br><span class="line">    var len_b;</span><br><span class="line">    var point;</span><br><span class="line">    var moved;</span><br><span class="line">    len_a = array_a.length;</span><br><span class="line">    for(i=0;i&lt;(len_a-1);i++)&#123;</span><br><span class="line">      point = array_a.pop();</span><br><span class="line">      array_b.push(point);</span><br><span class="line">    &#125;</span><br><span class="line">    moved = array_a.pop();</span><br><span class="line">    console.log(moved+&apos; &apos;+&apos;has been moved.&apos;);</span><br><span class="line">    len_b = array_b.length;</span><br><span class="line">    for(i=0;i&lt;len_b;i++)&#123;</span><br><span class="line">      point = array_b.pop();</span><br><span class="line">      array_a.push(point);</span><br><span class="line">    &#125;</span><br><span class="line">    console.log(&apos;After moving...&apos; +</span><br><span class="line">      &apos;array A: &apos;+array_a.toString());</span><br><span class="line">    console.log(&apos;The length of array A is:&apos;+array_a.length);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line">queue.in(10);</span><br><span class="line">queue.in(20);</span><br><span class="line">queue.in(30);</span><br><span class="line">queue.out();</span><br><span class="line">queue.out();</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>效果图：</p>
-</blockquote>
-<p><img src="https://wx2.sinaimg.cn/mw690/006vLrBqly1fvlpz9cvkuj30l00dm74q.jpg" alt="img"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">/*运用的函数：</span><br><span class="line">            * Math.floor(x):返回小于等于x的最大整数</span><br><span class="line">            * Array.splice():删除元素，并向数组添加新元素，返回值是删除内容</span><br><span class="line">            * Array.concat():连接两个或更多的数组*/</span><br><span class="line">var array_C = [15,19,76,99,43,32,28,7,12,10];</span><br><span class="line">function Quicksort (arr)&#123;</span><br><span class="line">    if (arr.length&lt;=1)&#123;</span><br><span class="line">        return arr;</span><br><span class="line">    &#125;</span><br><span class="line">    var middle;</span><br><span class="line">    var vip;</span><br><span class="line">    var left=[];</span><br><span class="line">    var right=[];</span><br><span class="line">    middle = Math.floor(arr.length/2);</span><br><span class="line">    vip = arr.splice(middle,1)[0];</span><br><span class="line">    for (var i=0;i&lt;arr.length;i++)&#123;</span><br><span class="line">        if(arr[i]&lt;=vip)&#123;</span><br><span class="line">            left.push(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        else &#123;</span><br><span class="line">            right.push(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return Quicksort(left).concat([vip],Quicksort(right));</span><br><span class="line">&#125;</span><br><span class="line">console.log(Quicksort(array_C));</span><br><span class="line">输出结果：</span><br><span class="line">[ 7, 10, 12, 15, 19, 28, 32, 43, 76, 99 ]</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -352,13 +355,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a  href="/2018/09/25/利用JS实现双队的进队出队/">利用JS实现双队的进队出队</a></p>
+        <p><span>本文标题:</span><a  href="/2018/09/25/利用JS实现快排/">利用JS实现快排</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 夜半鸢鸣 的个人博客">夜半鸢鸣</a></p>
-        <p><span>发布时间:</span>2018年09月25日 - 13时29分</p>
-        <p><span>最后更新:</span>2018年09月25日 - 17时28分</p>
+        <p><span>发布时间:</span>2018年09月25日 - 20时04分</p>
+        <p><span>最后更新:</span>2018年09月25日 - 22时47分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/09/25/利用JS实现双队的进队出队/" title="利用JS实现双队的进队出队">http://Krtoeezi.cn/Blog/2018/09/25/利用JS实现双队的进队出队/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://Krtoeezi.cn/Blog/2018/09/25/利用JS实现双队的进队出队/　　作者: 夜半鸢鸣" title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/09/25/利用JS实现快排/" title="利用JS实现快排">http://Krtoeezi.cn/Blog/2018/09/25/利用JS实现快排/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://Krtoeezi.cn/Blog/2018/09/25/利用JS实现快排/　　作者: 夜半鸢鸣" title=""></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -369,18 +372,18 @@
 
 <nav id="article-nav">
   
-    <a  href="/2018/09/25/利用JS实现快排/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a  href="/2018/09/25/利用JS实现二路归并排序/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          利用JS实现快排
+          利用JS实现二路归并排序
         
       </div>
     </a>
   
   
-    <a  href="/2018/09/13/webstorm的安装及破解/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">webstorm的安装及破解</div>
+    <a  href="/2018/09/25/利用JS实现双队的进队出队/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">利用JS实现双队的进队出队</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -465,13 +468,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a  href="/2018/09/25/利用JS实现快排/" title="上一篇: 利用JS实现快排">
+            <a  href="/2018/09/25/利用JS实现二路归并排序/" title="上一篇: 利用JS实现二路归并排序">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a  href="/2018/09/13/webstorm的安装及破解/" title="下一篇: webstorm的安装及破解">
+            <a  href="/2018/09/25/利用JS实现双队的进队出队/" title="下一篇: 利用JS实现双队的进队出队">
                 <i class="fa fa-angle-right"></i>
             </a>
         
